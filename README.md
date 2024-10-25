@@ -1,5 +1,5 @@
 # LANDINGPAGE-FSJ
-Landing page for Kodigo's Fullstack Bootcamp
+Landing page, project for Kodigo's Fullstack Bootcamp
 
 **Visual Identity**
 
