@@ -1,6 +1,94 @@
-/*
-TO-DO
-- Establecer el tamaño de las class=images
-- Poner los recuadros de los recuadros de los items
-- Los sale items se va a clasificar por clase para la fuente y tamaño y por id para la posición
-*/
+*{
+    margin: 0;
+    padding: 0;
+    /** indicamos a las cajitas que se adapten al contenedor padre */
+    box-sizing: border-box;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: #962727;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    margin-bottom: 16px;
+}
+
+main{
+    padding: 80px;
+}
+
+.pageTitle{
+    margin: 32px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Logo{
+    font-size: 32px;
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbarText{
+    margin: 8px;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: whitesmoke;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: .3s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+.images {
+    display: block;
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right:auto;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 16px;
+}
+
+.storeItem{
+    flex-grow: 1 1;
+    border: 6px solid #962727;
+    border-radius: 16px;
+    padding: 16px;
+    margin: 20px;
+    background-color: #b33c54;
+}
+
