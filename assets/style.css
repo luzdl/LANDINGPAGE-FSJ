@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    /** indicamos a las cajitas que se adapten al contenedor padre */
     box-sizing: border-box;
 }
 
@@ -22,6 +21,8 @@
 main{
     padding: 80px;
 }
+
+/*Elementos de la barra de navegación*/
 
 .pageTitle{
     margin: 32px;
@@ -64,51 +65,46 @@ main{
     width: 100%;
 }
 
-.images {
-    display: block;
-    height: 300px;
-    width: 300px;
-    border-radius: 10px;
-    margin-left: auto;
-    margin-right:auto;
-    margin-bottom: 10px;
-    background-color: #fff;
-}
+/*Elementos de la home page*/
 
-.homeContainer{
+.homeContainer {
     display: flex;
     flex-wrap: wrap;
+    gap: 16px;
+}
+
+.homeColumn1, .homeColumn2 {
+    flex: 1 1 100%; /* Ocupa toda la fila en pantallas pequeñas */
+    display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
     gap: 16px;
+    justify-content: space-evenly;
 }
 
-.homeColumn1{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    gap: 16px;
-    width: 40%;
-}
-
-.homeColumn2{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    gap: 16px;
-    width: 60%;
-}
-
-.saleItemContainer {
-    flex-grow: 1 1;
-    border-radius: 16px;
-    margin: 20px;
+.salesFlyerContainer, .saleItemContainer {
+    width: 100%; /* Mantener tamaño relativo */
     position: relative;
-    color: white;
+}
+
+@media (max-width: 850px) {
+    .homeColumn1, .homeColumn2 {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        align-items: center;
+    }
 }
 
 .homeImages {
-    display: block;
+    display: flex;
+    border-radius: 10px;
+    background-color: #fff;
+    aspect-ratio: 7/4;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.mainSaleImage {
+    display: flex;
     height: 100%;
     width: 100%;
     border-radius: 10px;
@@ -117,6 +113,14 @@ main{
     margin-bottom: 10px;
     background-color: #fff;
 }
+
+.saleText#saleTextMain {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 8px;
+    left: 16px;
+  }
 
 .saleText#saleTextBeauty {
     width: 100%;
@@ -143,6 +147,19 @@ main{
     right: 16px;
     text-align: end;
   }
+
+/*Elementos de las tabs*/
+
+.images {
+    display: block;
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right:auto;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
 
 .container{
     display: flex;
