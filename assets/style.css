@@ -20,6 +20,11 @@
 
 main{
     padding: 80px;
+    background-color: whitesmoke;
+}
+
+body{
+   font-family: "Figtree"; 
 }
 
 /*Elementos de la barra de navegación*/
@@ -74,7 +79,7 @@ main{
 }
 
 .homeColumn1, .homeColumn2 {
-    flex: 1 1 100%; /* Ocupa toda la fila en pantallas pequeñas */
+    flex: 1 1 100%; 
     display: flex;
     flex-direction: row;
     gap: 16px;
@@ -82,13 +87,13 @@ main{
 }
 
 .salesFlyerContainer, .saleItemContainer {
-    width: 100%; /* Mantener tamaño relativo */
+    width: 100%; 
     position: relative;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 987px) {
     .homeColumn1, .homeColumn2 {
-        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        flex-direction: column; 
         align-items: center;
     }
 }
@@ -119,7 +124,8 @@ main{
     height: 100%;
     position: absolute;
     top: 8px;
-    left: 16px;
+    right: 16px;
+    text-align: end;
   }
 
 .saleText#saleTextBeauty {
