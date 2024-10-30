@@ -75,6 +75,7 @@ body{
 
 .icons {
     position: absolute;
+    right: 5%;
     font-size: 2.8rem;
     color: #fff;
     cursor: pointer;
