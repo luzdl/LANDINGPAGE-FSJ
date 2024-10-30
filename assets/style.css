@@ -140,7 +140,7 @@ body{
     position: absolute;
     top: 8px;
     right: 16px;
-    overflow: hidden; /* Oculta el texto que exceda el contenedor */
+    overflow: hidden; 
   }
 
 @media (max-width: 854px){
@@ -174,9 +174,9 @@ body{
     text-align: right;
     color: aliceblue;
     font-size: x-large;
-    display: flex;           /* Propiedad faltante */
-    align-items: right;      /* Propiedad faltante */
-    justify-content: end;    /* Propiedad faltante */
+    display: flex;          
+    align-items: right;      
+    justify-content: end;   
     
   }
 
@@ -230,4 +230,3 @@ body{
     margin: 20px;
     background-color: rgba(245, 184, 196, 0.5);
 }
-
