@@ -19,7 +19,8 @@
 }
 
 main{
-    padding: 80px;
+    padding: 48px;
+    padding-top: 80px;
     background-color: whitesmoke;
 }
 
@@ -126,15 +127,32 @@ body{
 
 .saleText{
     font-family: "Rammetto One";
+    text-shadow: 1px 1px 2px rgba(0,0,0, 0.25);
 }
 
 .saleText#saleTextMain {
-    width: 30%;
-    height: 100%;
+    display: flex;
+    align-items: right; 
+    justify-content: end; 
+    text-align: right;
+    width: 40%;
+    font-size: 48px;
     position: absolute;
     top: 8px;
     right: 16px;
-    text-align: end;
+    overflow: hidden; /* Oculta el texto que exceda el contenedor */
+  }
+
+@media (max-width: 854px){
+    .saleText#saleTextMain{
+        font-size: 32px;
+    }
+  }
+
+@media (max-width: 635px){
+    .saleText#saleTextMain{
+        font-size: x-large;
+    }
   }
 
 .saleText#saleTextBeauty {
@@ -143,6 +161,8 @@ body{
     position: absolute;
     top: 8px;
     left: 16px;
+    color: black;
+    font-size: x-large;
   }
 
 .saleText#saleTextClothing {
@@ -151,7 +171,13 @@ body{
     position: absolute;
     top: 8px;
     right: 16px;
-    text-align: end;
+    text-align: right;
+    color: aliceblue;
+    font-size: x-large;
+    display: flex;           /* Propiedad faltante */
+    align-items: right;      /* Propiedad faltante */
+    justify-content: end;    /* Propiedad faltante */
+    
   }
 
 .saleText#saleTextElectronics {
@@ -160,7 +186,13 @@ body{
     position: absolute;
     top: 8px;
     right: 16px;
-    text-align: end;
+    text-align: right;
+    color: black;
+    font-size: x-large;
+    display: flex;           /* Propiedad faltante */
+    align-items: right;      /* Propiedad faltante */
+    justify-content: end;  
+    
   }
 
 /*Elementos de las tabs*/
