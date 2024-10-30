@@ -49,11 +49,11 @@ body{
 
 .navbar a {
     position: relative;
-    font-size: 18px;
+    font-size: 1.2rem;
     color: whitesmoke;
     font-weight: 500;
     text-decoration: none;
-    margin-left: 40px;
+    margin-left: 2.5rem;
 }
 
 .navbar a::before {
@@ -69,6 +69,40 @@ body{
 
 .navbar a:hover::before {
     width: 100%;
+}
+
+/*Responsive navbar*/
+
+.icons {
+    position: absolute;
+    font-size: 2.8rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+/*breakpoints*/
+
+@media (max-width: 987px){
+    .header{
+        padding: 1.3rem 5%;
+    }
+
+}
+
+@media (max-width: 870px){
+    .icons{
+        display: block;
+    }
+    
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 17.7rem;
+        background:#962727;
+    }
 }
 
 /*Elementos de la home page*/
