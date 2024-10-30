@@ -59,7 +59,7 @@ body{
     left: 0;
     width: 0;
     height: 2px;
-    background: #fff;
+    background: whitesmoke;
     transition: .3s;
 }
 
@@ -73,7 +73,7 @@ body{
     position: absolute;
     right: 5%;
     font-size: 2.8rem;
-    color: #fff;
+    color: whitesmoke;
     cursor: pointer;
     display: none;
 }
@@ -186,7 +186,7 @@ body{
 .homeImages {
     display: flex;
     border-radius: 10px;
-    background-color: #fff;
+    background-color: whitesmoke;
     aspect-ratio: 7/4;
     height: 100%;
     width: 100%;
@@ -201,7 +201,7 @@ body{
     margin-left: auto;
     margin-right:auto;
     margin-bottom: 10px;
-    background-color: #fff;
+    background-color: whitesmoke;
 }
 
 .saleText{
@@ -251,7 +251,7 @@ body{
     top: 8px;
     right: 16px;
     text-align: right;
-    color: aliceblue;
+    color: whitesmoke;
     font-size: x-large;
     display: flex;          
     align-items: right;      
@@ -284,7 +284,7 @@ body{
     margin-left: auto;
     margin-right:auto;
     margin-bottom: 10px;
-    background-color: #fff;
+    background-color: whitesmoke;
 }
 
 .itemPrice{
@@ -308,4 +308,5 @@ body{
     padding: 16px;
     margin: 20px;
     background-color: rgba(245, 184, 196, 0.5);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
 }
