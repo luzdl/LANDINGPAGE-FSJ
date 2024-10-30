@@ -78,18 +78,33 @@ body{
     display: none;
 }
 
+#check {
+    display: none;
+}
+
 /*breakpoints*/
 
 @media (max-width: 987px){
     .header{
         padding: 1.3rem 5%;
     }
-
 }
 
 @media (max-width: 870px){
     .icons{
         display: inline-flex;
+    }
+
+    .icons #close-icon{
+        display: none;
+    }
+
+    #check:checked~.icons #menu-icon {
+        display: none;
+    }
+
+    #check:checked~.icons #close-icon {
+        display: block;
     }
     
     .navbar{
@@ -97,10 +112,26 @@ body{
         top: 100%;
         left: 0;
         width: 100%;
-        height: auto;
+        height: 0;
         background: rgba (0 , 0, 0, .1);
         backdrop-filter: blur(50px);
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+        overflow: hidden;
+        transition: .3s;
+    }
+
+    .navbar a::before {
+        background: #962727;
+    }
+      
+    .navbar a:hover::before {
+        width: 50%;
+        left: 50%;
+        right: 50%;
+      }
+
+    #check:checked~.navbar {
+        height: 13.5rem;
     }
 
     .navbar a{
@@ -108,7 +139,15 @@ body{
         font-size: 1.2rem;
         margin: 1.5rem 0;
         text-align: center;
+        transform: translateY(-50px);
+        transition: .3s ease;
+        color: #962727;
+        text-shadow: 1px 1px 2px rgba(0,0,0, 0.25);
     }
+
+    #check:checked~.navbar a {
+        transform: translateY(0px);
+    }    
 }
 
 /*Elementos de la home page*/
@@ -229,8 +268,8 @@ body{
     text-align: right;
     color: black;
     font-size: x-large;
-    display: flex;           /* Propiedad faltante */
-    align-items: right;      /* Propiedad faltante */
+    display: flex;           
+    align-items: right;     
     justify-content: end;  
     
   }
