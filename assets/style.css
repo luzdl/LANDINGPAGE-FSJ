@@ -208,6 +208,12 @@ body{
     background-color: #fff;
 }
 
+.itemPrice{
+    font-family: "STIX two text";
+    margin-top: 8px;
+    color: #962727;
+}
+
 .container{
     display: flex;
     flex-wrap: wrap;
@@ -222,6 +228,6 @@ body{
     border-radius: 16px;
     padding: 16px;
     margin: 20px;
-    background-color: #f5b8c4;
+    background-color: rgba(245, 184, 196, 0.5);
 }
 
