@@ -1,6 +1,7 @@
 # LANDINGPAGE-FSJ
 
 Landing page, project for Kodigo's Fullstack Bootcamp
+Responsive discount landing page for a store made on HTML and CSS
 
 ## Color palette
 
